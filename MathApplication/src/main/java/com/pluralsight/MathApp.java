@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class MathApp {
 
     public static void main(String[ ] args) {
@@ -24,9 +26,37 @@ public class MathApp {
         System.out.println("The area of a circle with a radius of " + radius + " is " + area );
 
         //Question 4
+        double distance = 0.0;
+        distance = Math.sqrt( Math.pow(85, -5.0)) + Math.pow( 50, -10.);
+        System.out.println("Distance between two points" + distance);
 
+        //Question 5
+        int num = 42;
+        double pi = 3.14159;
+        String name = "Alice";
+        char grade = 'A';
+        String formatted = String.format("Number: %d, Pi: %f, Name: %s, Grade: %c", num, pi, name, grade);
+        System.out.println(formatted);
 
+        Scanner scanner = new Scanner(System.in);
+        double inputValue = promptAndReturnDouble("Please enter a floating point number: ");
+        System.out.println(inputValue);
 
+        System.out.println("Please enter your name:");
+        String inputString = scanner.nextLine();
+        System.out.println(inputString);
+
+        return;
+
+        public static double promptAndReturnDouble(String prompt){
+            double value;
+            Scanner scanner = new Scanner(System.in);
+            System.out.println(prompt + " : ");
+            value = scanner.nextDouble();
+
+            scanner.nextLine();
+            rerutn value;
+        }
 
         /*
         Math.Pi
